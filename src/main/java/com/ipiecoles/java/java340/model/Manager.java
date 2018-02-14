@@ -38,14 +38,17 @@ public class Manager extends Employe {
 		this.ajoutTechnicienEquipe(new Technicien(nom, prenom, matricule, dateEmbauche, salaire, grade));
 	}
 	
+	@Override
 	public void setSalaire(Double salaire) {
 		super.setSalaire(salaire * Entreprise.INDICE_MANAGER + (salaire * (double)equipe.size() / 10));
 	}
 
+	@Override
 	public Double getPrimeAnnuelle() {
 		return Entreprise.primeAnnuelleBase() + equipe.size() * Entreprise.PRIME_MANAGER_PAR_TECHNICIEN;
 	}
 	
+	@Override
 	public void augmenterSalaire(Double pourcentage) {
 		super.augmenterSalaire(pourcentage);
 		augmenterSalaireEquipe(pourcentage);

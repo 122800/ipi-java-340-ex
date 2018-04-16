@@ -160,5 +160,5 @@ public class ManagerTest {
 			Assertions.assertThat(primeAnnuelle).isEqualTo(yearlyCoefficient + 500);
 		}
 	}
-	
+
 }

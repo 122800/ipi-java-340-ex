@@ -2,7 +2,10 @@ package com.ipiecoles.java.java340.model;
 
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
+import org.junit.experimental.runners.Enclosed;
+import org.junit.runner.RunWith;
 
+@RunWith(Enclosed.class)
 public class CommercialTest {
 	
 	@Test

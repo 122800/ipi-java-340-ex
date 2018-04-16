@@ -27,8 +27,7 @@ public class TechnicienServiceTest {
 	@Mock public TechnicienRepository technicienRepository;
 	@Mock public ManagerRepository managerRepository;
 	
-	@Test
-	public void testAddManager() {
+	@Test public void testAddManager() {
 		//Given
 		final String MATRICULE = "M12345";
 		final Long ID_TECHNICIEN = 1L;
